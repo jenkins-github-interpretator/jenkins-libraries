@@ -1,7 +1,7 @@
 /*
  call docker build in dind agent
  */
-def call(Map parameters = [:] {
+def call(Map parameters = [:]) {
     def image = parameters.image
     def tag = parameters.tag
     def tagged_image = image + ":" + tag
